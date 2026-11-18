@@ -2,7 +2,7 @@
 # /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # Script to manage UserConfigs and UserConfigsBak
 
-HYPR_CONFIG_DIR="$HOME/.config/hypr"
+HYPR_CONFIG_DIR="$HOME/dotfiles/hypr"
 USER_CONFIGS="$HYPR_CONFIG_DIR/UserConfigs"
 USER_CONFIGS_BAK="$HYPR_CONFIG_DIR/UserConfigsBak"
 

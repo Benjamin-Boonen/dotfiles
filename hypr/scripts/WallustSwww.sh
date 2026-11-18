@@ -9,7 +9,7 @@ set -euo pipefail
 passed_path="${1:-}"
 cache_dir="$HOME/.cache/swww/"
 rofi_link="$HOME/.config/rofi/.current_wallpaper"
-wallpaper_current="$HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
+wallpaper_current="$HOME/dotfiles/hypr/wallpaper_effects/.wallpaper_current"
 read_cached_wallpaper() {
   local cache_file="$1"
   if [[ -f "$cache_file" ]]; then

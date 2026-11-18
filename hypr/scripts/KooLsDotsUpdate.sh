@@ -3,7 +3,7 @@
 # simple bash script to check if update is available by comparing local version and github version
 
 # Local Paths
-local_dir="$HOME/.config/hypr"
+local_dir="$HOME/dotfiles/hypr"
 iDIR="$HOME/.config/swaync/images/"
 local_version=$(find "$local_dir" -maxdepth 1 -name 'v*' -printf '%f\n' 2>/dev/null | sort -V | tail -n 1 | sed 's/^v//')
 KooL_Dots_DIR="$HOME/Hyprland-Dots"
@@ -16,7 +16,7 @@ fi
 
 # GitHub URL - KooL's dots
 branch="main"
-github_url="https://github.com/JaKooLit/Hyprland-Dots/tree/$branch/config/hypr/"
+github_url="https://github.com/JaKooLit/Hyprland-Dots/tree/$branchdotfiles/hypr/"
 # Check for required tools (curl)
 if ! command -v curl &> /dev/null; then
   notify-send -i "$iDIR/error.png" "Need curl:" "curl not found. Please install curl."

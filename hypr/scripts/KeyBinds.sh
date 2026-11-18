@@ -11,9 +11,9 @@ if pidof rofi > /dev/null; then
 fi
 
 # define the config files
-keybinds_conf="$HOME/.config/hypr/configs/Keybinds.conf"
-user_keybinds_conf="$HOME/.config/hypr/UserConfigs/UserKeybinds.conf"
-laptop_conf="$HOME/.config/hypr/UserConfigs/Laptops.conf"
+keybinds_conf="$HOME/dotfiles/hypr/configs/Keybinds.conf"
+user_keybinds_conf="$HOME/dotfiles/hypr/UserConfigs/UserKeybinds.conf"
+laptop_conf="$HOME/dotfiles/hypr/UserConfigs/Laptops.conf"
 rofi_theme="$HOME/.config/rofi/config-keybinds.rasi"
 msg='☣️ NOTE ☣️: Clicking with Mouse or Pressing ENTER will have NO function'
 
@@ -23,7 +23,7 @@ files=("$keybinds_conf" "$user_keybinds_conf")
 
 # Parse binds using the python script for speed
 # The last argument must be the user config for override logic to work correctly
-display_keybinds=$("$HOME/.config/hypr/scripts/keybinds_parser.py" "${files[@]}")
+display_keybinds=$("$HOME/dotfiles/hypr/scripts/keybinds_parser.py" "${files[@]}")
 
 # Check for suggestions file created by python script
 if [[ -f "/tmp/hypr_keybind_suggestions_file" ]]; then

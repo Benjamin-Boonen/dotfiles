@@ -9,11 +9,11 @@ fi
 
 # Variables
 iDIR="$HOME/.config/swaync/images"
-SCRIPTSDIR="$HOME/.config/hypr/scripts"
-monitor_dir="$HOME/.config/hypr/Monitor_Profiles"
-target="$HOME/.config/hypr/monitors.conf"
+SCRIPTSDIR="$HOME/dotfiles/hypr/scripts"
+monitor_dir="$HOME/dotfiles/hypr/Monitor_Profiles"
+target="$HOME/dotfiles/hypr/monitors.conf"
 rofi_theme="$HOME/.config/rofi/config-Monitors.rasi"
-msg='❗NOTE:❗ This will overwrite $HOME/.config/hypr/monitors.conf'
+msg='❗NOTE:❗ This will overwrite $HOME/dotfiles/hypr/monitors.conf'
 
 # Define the list of files to ignore
 ignore_files=(

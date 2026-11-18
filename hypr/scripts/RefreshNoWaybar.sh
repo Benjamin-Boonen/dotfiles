@@ -5,8 +5,8 @@
 # Used by automatic wallpaper change
 # Modified inorder to refresh rofi background, Wallust, SwayNC only
 
-SCRIPTSDIR=$HOME/.config/hypr/scripts
-UserScripts=$HOME/.config/hypr/UserScripts
+SCRIPTSDIR=$HOME/dotfiles/hypr/scripts
+UserScripts=$HOME/dotfiles/hypr/UserScripts
 
 # Define file_exists function
 file_exists() {

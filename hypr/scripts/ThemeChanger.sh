@@ -50,7 +50,7 @@ if wallust theme -- "${choice}"; then
     "$HOME/.config/waybar/wallust/colors-waybar.css"
     "$HOME/.config/rofi/wallust/colors-rofi.rasi"
     "$HOME/.config/kitty/kitty-themes/01-Wallust.conf"
-    "$HOME/.config/hypr/wallust/wallust-hyprland.conf"
+    "$HOME/dotfiles/hypr/wallust/wallust-hyprland.conf"
     "$HOME/.config/ghostty/wallust.conf"
   )
 
@@ -118,8 +118,8 @@ if wallust theme -- "${choice}"; then
   fi
 
   # Refresh bars/menus after files are ready
-  if [ -x "$HOME/.config/hypr/scripts/Refresh.sh" ]; then
-    "$HOME/.config/hypr/scripts/Refresh.sh" >/dev/null 2>&1 || true
+  if [ -x "$HOME/dotfiles/hypr/scripts/Refresh.sh" ]; then
+    "$HOME/dotfiles/hypr/scripts/Refresh.sh" >/dev/null 2>&1 || true
   else
     if command -v waybar-msg >/dev/null 2>&1; then
       waybar-msg cmd reload >/dev/null 2>&1 || true

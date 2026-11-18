@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Script to update WindowRules config if Hyprland version is >= 0.53
 
-CONFIGS_DIR="$HOME/.config/hypr/configs"
+CONFIGS_DIR="$HOME/dotfiles/hypr/configs"
 TARGET_FILE="$CONFIGS_DIR/WindowRules.conf"
 V3_FILE="$CONFIGS_DIR/WindowRules-config-v3.conf"
 

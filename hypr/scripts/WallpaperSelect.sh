@@ -13,11 +13,11 @@ swww img --outputs HDMI-A-1 "$WALLPAPER" --transition-type fade --transition-dur
 swww img --outputs eDP-1 "$WALLPAPER" --transition-type fade --transition-duration 1
 
 # Save current wallpaper
-ln -sf "$WALLPAPER" $HOME/.config/hypr/wallpaper_effects/.wallpaper_current
+ln -sf "$WALLPAPER" $HOME/dotfiles/hypr/wallpaper_effects/.wallpaper_current
 
 # Run wallust
 wallust run "$WALLPAPER"
-python3 "$HOME/.config/hypr/scripts/fix_contrast.py" "$HOME/.config/kitty/kitty-themes/01-Wallust.conf"
+python3 "$HOME/dotfiles/hypr/scripts/fix_contrast.py" "$HOME/.config/kitty/kitty-themes/01-Wallust.conf"
 # Reload everything
 killall waybar; waybar &
 hyprctl reload

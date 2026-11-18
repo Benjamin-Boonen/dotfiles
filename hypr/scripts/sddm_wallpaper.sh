@@ -8,9 +8,9 @@
 terminal=kitty
 PICTURES_DIR="$(xdg-user-dir PICTURES 2>/dev/null || echo "$HOME/Pictures")"
 wallDIR="$PICTURES_DIR/wallpapers"
-SCRIPTSDIR="$HOME/.config/hypr/scripts"
-wallpaper_current="$HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
-wallpaper_modified="$HOME/.config/hypr/wallpaper_effects/.wallpaper_modified"
+SCRIPTSDIR="$HOME/dotfiles/hypr/scripts"
+wallpaper_current="$HOME/dotfiles/hypr/wallpaper_effects/.wallpaper_current"
+wallpaper_modified="$HOME/dotfiles/hypr/wallpaper_effects/.wallpaper_modified"
 # Resolve SDDM themes directory (standard paths and NixOS path)
 sddm_themes_dir="/usr/share/sddm/themes"
 if [ ! -d "$sddm_themes_dir" ] && [ -d "/run/current-system/sw/share/sddm/themes" ]; then

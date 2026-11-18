@@ -2,8 +2,8 @@
 # /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # Scripts for refreshing ags, waybar, rofi, swaync, wallust
 
-SCRIPTSDIR=$HOME/.config/hypr/scripts
-UserScripts=$HOME/.config/hypr/UserScripts
+SCRIPTSDIR=$HOME/dotfiles/hypr/scripts
+UserScripts=$HOME/dotfiles/hypr/UserScripts
 
 # Define file_exists function
 file_exists() {
