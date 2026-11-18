@@ -1,0 +1,142 @@
+@import "wallust/colors-waybar.css";
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 13px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: @foreground;
+  border-bottom: none;
+}
+
+.modules-left {
+  background: @background-alt;
+  border-radius: 0 20px 20px 0;
+  padding: 2px 16px 2px 8px;
+  margin: 4px 0;
+}
+
+.modules-center {
+  background: @background-alt;
+  border-radius: 20px;
+  padding: 2px 16px;
+  margin: 4px 0;
+}
+
+.modules-right {
+  background: @background-alt;
+  border-radius: 20px 0 0 20px;
+  padding: 2px 8px 2px 16px;
+  margin: 4px 0;
+}
+
+#workspaces button {
+  color: @color12;
+  margin: 2px 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+  background: @color12;
+  color: @color10;
+}
+
+#workspaces button.urgent {
+  background: @color10;
+  color: @color12;
+}
+
+#workspaces button:hover {
+  color: @color11;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#clock {
+  color: @foreground;
+  letter-spacing: 1px;
+}
+
+#mpris {
+  color: @color5;
+  font-style: italic;
+}
+
+#pulseaudio {
+  color: @foreground;
+  padding: 0 8px;
+  border-left: 1px solid @color0;
+}
+
+#pulseaudio.muted {
+  color: @color11;
+}
+
+#custom-weather {
+  color: @foreground;
+  padding: 0 8px;
+}
+
+#custom-power {
+  color: @color12;
+  font-size: 16px;
+  padding: 0 14px 0 8px;
+  border-left: 1px solid @color0;
+}
+
+tooltip {
+  background: @color0;
+  border: 1px solid @color12;
+  border-radius: 6px;
+  color: @foreground;
+}
+
+#custom-cava {
+  color: @color12;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding-right: 8px;
+}
+
+#battery {
+  color: @foreground;
+  padding: 0 8px;
+  border-left: 1px solid @color0;
+}
+
+#battery.charging {
+  color: @color11;
+}
+
+#battery.warning {
+  color: @color12;
+}
+
+#battery.critical {
+  color: @color6;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  to {
+    color: @background;
+  }
+}
+
+#network {
+  color: @color8;
+  /* color 5, 6*/
+  padding: 0 8px;
+  border-left: 1px solid @color0;
+}
+
+#network.disconnected {
+  color: @color11;
+}
